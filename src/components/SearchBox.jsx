@@ -20,16 +20,16 @@ const SearchBox = () => {
   }, [debouncedValue, dispatch]);
 
   return (
-    <div className="w-full max-w-[631px] h-[52px] mb-4 flex justify-between self-start bg-gray-600">
+    <div className="relative w-full max-w-[631px] h-[52px] mb-4 flex justify-between self-start bg-gray-600">
       <input
         type="text"
         id="table-search"
         placeholder="Поиск"
         value={inputSearch}
-        className="outline-gray-600 flex-1 px-6 py-4 text-sm font-normal text-white bg-gray-600"
+        className="outline-gray-200 flex-1 px-6 py-4 text-sm font-normal text-white bg-gray-600"
         onChange={(e) => setInputSearch(e.target.value)}
       />
-      <div className="flex px-4 py-4">
+      <div className="absolute top-[50%] right-[0%] translate-x-[0%] translate-y-[-50%] flex px-4 py-4">
         <img src="/search.svg" width="21px" height="21px" />
       </div>
     </div>

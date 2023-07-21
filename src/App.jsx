@@ -12,7 +12,7 @@ function App() {
 
   return (
     <BrowserRouter>
-      <div className="w-[100%] h-[100vh] relative flex flex-col justify-center items-start py-5 px-20">
+      <div className="w-[100%] h-[100vh] relative flex flex-col justify-center items-start px-2 py-5 lg:px-20 ">
         <SearchBox />
         <Routes>
           <Route path="/" element={<Navigate to="/1" />} />

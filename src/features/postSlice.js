@@ -90,6 +90,9 @@ export const postSlice = createSlice({
       } else {
         state.filteredPosts = state.posts.filter(function (post) {
           if (
+            post.id
+              .toString()
+              .includes(action.payload.toString().toLowerCase()) ||
             post.title
               .toString()
               .toLowerCase()

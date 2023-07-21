@@ -22,12 +22,12 @@ const Navigation = () => {
       >
         <button
           onClick={() => dispatch(getPrevPage())}
-          className=" text-2xl font-medium "
+          className="text-lg lg:text-2xl font-medium "
         >
           Назад
         </button>
       </Link>
-      <ul className="inline-flex gap-3 h-8">
+      <ul className="inline-flex gap-3 items-center h-8">
         {pager.map((page) => (
           <li key={page}>
             <Link
@@ -38,7 +38,7 @@ const Navigation = () => {
             >
               <button
                 onClick={() => dispatch(getPage(page))}
-                className="italic text-lg font-bold"
+                className="italic text-sm lg:text-lg font-bold"
               >
                 {page}
               </button>
@@ -54,7 +54,7 @@ const Navigation = () => {
       >
         <button
           onClick={() => dispatch(getNextPage())}
-          className="text-2xl font-medium"
+          className="text-lg lg:text-2xl font-medium"
         >
           Далее
         </button>
